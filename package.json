@@ -1,0 +1,28 @@
+{
+  "name": "automacao-cypress-buger-eats",
+  "version": "1.0.0",
+  "description": "Automação página Buger Eats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeBarrozo2022/automacao-cypress-buger-eats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeBarrozo2022/automacao-cypress-buger-eats/issues"
+  },
+  "homepage": "https://github.com/FelipeBarrozo2022/automacao-cypress-buger-eats#readme",
+  "dependencies": {
+    "cypress": "^10.6.0",
+    "faker": "^6.6.6"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.4.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
