@@ -11,6 +11,11 @@ context('Cadastro de Novo usuário - Perfil Entregador', () => {
         cy.visit('https://buger-eats.vercel.app/deliver')
     });    
 
+    afterEach(() => {
+        cy.screenshot()
+        
+    });
+
     it('CT003 - Cadastro de usuário com sucesso', () => {   
          
         cy.get(':nth-child(2) > :nth-child(2) > :nth-child(1) > input').type(faker.name.firstName())
@@ -130,7 +135,7 @@ context('Cadastro de Novo usuário - Perfil Entregador', () => {
         cy.get(':nth-child(3) > :nth-child(2) > :nth-child(1) > input').type(perfil.cep)
         cy.get(':nth-child(3) > :nth-child(2) > :nth-child(2) > input').click()    
         cy.get(':nth-child(4) > :nth-child(1) > input').type('345')
-        cy.get('.delivery-method > :nth-child(2git)').click()     
+        cy.get('.delivery-method > :nth-child(2)').click()     
         cy.get('.button-success').click()
         cy.get('.alert-error').should('contain','Adicione uma foto da sua CNH')  
 
